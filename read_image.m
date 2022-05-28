@@ -1,4 +1,4 @@
-i = imread("./ssl/o.bmp");
+i = imread("o.bmp");
 save -binary image.raw i
 
 
@@ -20,6 +20,6 @@ save -binary image.raw i
 system('bash ./encrypt_image.sh')
 
 
-load image.enc i;
+load enc.bmp i;
 imwrite(i,"enc.bmp")
 imshow(i)
